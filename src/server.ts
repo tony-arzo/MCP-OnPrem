@@ -13,7 +13,7 @@ const getWeatherForecast = server.tool(
   "get-weather-forecast",
   "Get a weather forecast",
   async () => {
-    const response = await fetch("http://datagateway-vm:8083/WeatherForecast");
+    const response = await fetch("http://localhost/WeatherForecast");
     const data = await response.json();
     return {
       content: [
