@@ -13,7 +13,7 @@ const getWeatherForecast = server.tool(
   "get-weather-forecast",
   "Get a weather forecast",
   async () => {
-    const response = await fetch("http://localhost/WeatherForecast");
+    const response = await fetch("http://{on-prem server/machine name}/WeatherForecast");
     const data = await response.json();
     return {
       content: [
